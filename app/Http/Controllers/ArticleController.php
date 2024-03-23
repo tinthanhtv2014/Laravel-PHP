@@ -3,18 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Article;;
-class PostController extends Controller
+
+class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-
-        $articles = Article::all();
-        // dd($articles);
-        return view('home',compact('articles'));
+        //
     }
 
     /**
@@ -23,7 +20,6 @@ class PostController extends Controller
     public function create()
     {
         //
-        echo " fuk laravel";
     }
 
     /**
@@ -32,7 +28,6 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //
-        echo " fuk laravel";
     }
 
     /**
@@ -41,7 +36,7 @@ class PostController extends Controller
     public function show(string $id)
     {
         //
-        echo " fuk laravel";
+        echo "details of article: ".$id;
     }
 
     /**
@@ -50,7 +45,6 @@ class PostController extends Controller
     public function edit(string $id)
     {
         //
-        echo " fuk laravel";
     }
 
     /**
@@ -59,7 +53,6 @@ class PostController extends Controller
     public function update(Request $request, string $id)
     {
         //
-        echo " fuk laravel";
     }
 
     /**
@@ -68,6 +61,5 @@ class PostController extends Controller
     public function destroy(string $id)
     {
         //
-        echo " fuk laravel";
     }
 }
