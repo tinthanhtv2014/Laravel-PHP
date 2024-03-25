@@ -22,8 +22,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
-        echo " fuk laravel";
+        return view('posts.create');
     }
 
     /**
